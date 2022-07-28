@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>童乐乐之歌</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+          
+        .button {
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #f08b6c;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px;
+  width: 120px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  position:relative;
+  top: 400px;
+}
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -10px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 20px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+        .b {
+            width: 300px;
+            height: 1254px;
+            /* border: 1px solid rgb(54, 53, 51); */
+            margin: 30px auto;
+            position: relative;
+            background: url(./pic2.png) no-repeat 0 54px ;
+            background-size: 300px 400px;
+            /* background:rgba(255,255,255,0.3); */
+            color: rgb(245, 215, 170);
+        }
+
+
+        
+        div audio {
+            width: 300px;
+        }
+        
+        section {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            height: 200px;
+            margin-top: 50px;
+        }
+        
+        ul {    
+            width: 100%;
+            position: absolute;
+            top: 40px;
+            left: 0;
+            transition: top .2s linear;
+        }
+        h1{
+            text-align: center;
+            color: white;
+    text-shadow:  
+    0px 0px 20px yellow,
+    0px 0px 10px orange,
+    0px 0px 10px orangered, 
+    0px 0px 10px red;
+        }
+        h4{
+            position:relative;
+            text-align: left;
+            left:120px;
+            color: orange
+            /* color: #fff;
+    text-shadow:  0px 0px 5px orangered; */
+        }
+        
+        li {
+            list-style: none;
+            height: 20px;
+            line-height: 20px;
+            text-align: center;
+        }
+        h5 {
+            text-align:center;
+            background:rgba(255,255,255,0.8);
+        }
+        section{
+            position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    width: 300px;
+    height: 400px;
+    line-height: 0px;
+    text-align: center;
+    background:rgba(255,255,255,0.8);
+        }
+        
+        .active {
+            color: rgb(194, 66, 27);
+        }
+        
+    </style>
+</head>
+
+<body>
+
+    
+    <img src="./pic.jpg" height="100" width="100"></img>
+    <h1>童乐乐之歌</h1>
+    <h4>  </h4>
+        <h4 >作词：张奕</h4>
+    <h4 >作曲：星光无限</h4>
+    <h4 >演唱：马怡君等</h4>
+    
+    
+    
+    <div class="b">
+      
+        <audio src="./童乐乐之歌.mp3" controls loop muted></audio>
+        <section>
+            <div class="a">
+                
+            <ul></ul>
+            </div>
+        </section>
+        <button class="button" style="vertical-align:middle" onclick="btnAction()"><span>全部歌词 </span></button>
+        
+
+    </div>
+    <script>
+
+        var lrc = []
+        var str = '[00:00.000]—— 童乐乐之歌 ——\n[00:20.230]那一天我松开爸爸妈妈的手\n   [00:26.230]走进童乐园  成为童乐娃\n[00:31.230]操场上拍球  活动室涂鸦\n  [00:36.230]唱着节气之歌慢慢长大\n[01:00.230]那一天我松开爸爸妈妈的手\n[01:04.230]走进童乐园  成为童乐娃\n[01:09.230]操场上拍球  活动室涂鸦\n  [01:13.230]唱着节气之歌慢慢长大\n[01:19.230]春雨惊春清谷天\n[01:21.230]夏满芒夏暑相连\n[01:23.230]秋处露秋寒霜降\n[01:25.230]冬雪雪冬小大寒\n    [01:28.230]春雨惊春清谷天\n [01:28.990]夏满芒夏暑相连\n  [01:31.230]秋处露秋寒霜降\n [01:33.230]冬雪雪冬小大寒\n   [01:37.230]养习    启智   健体  怡情\n    [01:44.230]我是快乐的童乐乐\n   [01:49.230]童乐是我家  童乐是我家\n[01:58.230]\n[02:12.000]那一天我牵着老师妈妈的手\n[02:16.000]投入她的怀   成为她的娃\n   [02:20.000]生活上呵护  游戏中启发\n    [02:24.000]倾情传承着中华文化\n [02:30.000]春雨惊春清谷天\n   [02:32.000]夏满芒夏暑相连\n   [02:34.000]秋处露秋寒霜降\n [02:36.000]冬雪雪冬小大寒\n      [02:38.500]春雨惊春清谷天\n   [02:40.000]夏满芒夏暑相连\n    [02:42.000]秋处露秋寒霜降\n   [02:44.000]冬雪雪冬小大寒\n    [02:47.500]德润童心   慧育桃李\n [02:55.500]我是健康的童乐乐\n    [03:00.000]童乐是我家\n [03:03.500]德润童心   慧育桃李\n[03:11.000]我是健康的童乐乐\n    [03:15.000]童乐是我家  童乐是我家\n [03:20.000]童乐是我家 嘿！\n'
+        console.log(str)
+        var timer = []
+        var arr = str.split('\n')
+        var reg = /\[(\d{2}:\d{2})\.\d{2,3}\](.+)/
+        arr.forEach(function(a) {
+            if (reg.exec(a) != null) {
+                timer.push(reg.exec(a)[1])
+                lrc.push(reg.exec(a)[2])
+            }
+        })
+        var ul = document.querySelector('ul')
+        var frg = document.createDocumentFragment()
+        lrc.forEach(function(a) {
+            var li = document.createElement('li')
+            li.innerText = a
+            frg.appendChild(li)
+        })
+        ul.appendChild(frg)
+        var ad = document.querySelector('audio')
+        ad.ontimeupdate = function() {
+            var currtime = parseInt(this.currentTime)
+            var mins = parseInt(currtime / 60)
+            var secs = currtime % 60
+            if (mins < 10) mins = '0' + mins
+            if (secs < 10) secs = '0' + secs
+            var timstr = mins + ':' + secs
+            timer.forEach(function(a, i) {
+                if (a == timstr) {
+                    ul.style.top = 160 - i * 20 + 'px'
+                    for (var j = 0; j < ul.children.length; j++) {
+                        ul.children[j].className = ''
+                    }
+                    ul.children[i].className = 'active'
+                }
+            })
+        }
+
+        function btnAction(){
+            window.location.href='./index2.html';
+        }
+    </script>
+</body>
+
+</html>

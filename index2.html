@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+</head>
+<body>
+    <li></li>
+</body>
+    <script>
+
+        var lrc = []
+        var str = '—— 童乐乐之歌 ——\n那一天我松开爸爸妈妈的手\n  走进童乐园  成为童乐娃\n操场上拍球  活动室涂鸦\n  唱着节气之歌慢慢长大\n那一天我松开爸爸妈妈的手\n走进童乐园  成为童乐娃\n操场上拍球  活动室涂鸦\n  唱着节气之歌慢慢长大\n春雨惊春清谷天\n夏满芒夏暑相连\n秋处露秋寒霜降\n冬雪雪冬小大寒\n    春雨惊春清谷天\n 夏满芒夏暑相连\n  秋处露秋寒霜降\n 冬雪雪冬小大寒\n   养习    启智   健体  怡情\n   我是快乐的童乐乐\n   童乐是我家  童乐是我家\n那一天我牵着老师妈妈的手\n投入她的怀   成为她的娃\n   生活上呵护  游戏中启发\n倾情传承着中华文化\n 春雨惊春清谷天\n   夏满芒夏暑相连\n   秋处露秋寒霜降\n 冬雪雪冬小大寒\n     春雨惊春清谷天\n   夏满芒夏暑相连\n    秋处露秋寒霜降\n   冬雪雪冬小大寒\n 德润童心   慧育桃李\n 我是健康的童乐乐\n    童乐是我家\n 德润童心   慧育桃李\n我是健康的童乐乐\n   童乐是我家  童乐是我家\n 童乐是我家 嘿！\n'
+        console.log(str)
+        var timer = []
+        var arr = str.split('\n')
+        arr.pop(0)
+        
+        console.log(arr.length)
+        // var reg = /\[(\d{2}:\d{2})\.\d{2,3}\](.+)/
+        // arr.forEach(function(a) {
+        //     if (reg.exec(a) != null) {
+        //         timer.push(reg.exec(a)[1])
+        //         lrc.push(reg.exec(a)[2])
+        //     }
+        // })
+        var li = document.querySelector('li')
+        var frg = document.createDocumentFragment()
+        arr.forEach(function(a) {
+            var li = document.createElement('li')
+            li.innerText = a
+            frg.appendChild(li)
+        })
+        li.appendChild(frg)
+
+        function btnAction(){
+            window.location.href='https://www.bilibili.com/';
+        }
+    </script>
