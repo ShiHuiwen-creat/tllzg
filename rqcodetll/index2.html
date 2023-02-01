@@ -1,0 +1,256 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>考试安排</title>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+        }
+
+        body {
+            font-family: Helvetica;
+            -webkit-font-smoothing: antialiased;
+            background: rgba( 71, 147, 227, 1);
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 18px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            color: white;
+            padding: 30px 0;
+        }
+
+        /* Table Styles */
+
+        .table-wrapper {
+            margin: 10px 70px 70px;
+            box-shadow: 0px 35px 50px rgba( 0, 0, 0, 0.2 );
+        }
+
+        .fl-table {
+            border-radius: 5px;
+            font-size: 12px;
+            font-weight: normal;
+            border: none;
+            border-collapse: collapse;
+            width: 100%;
+            max-width: 100%;
+            white-space: nowrap;
+            background-color: white;
+        }
+
+            .fl-table td, .fl-table th {
+                text-align: center;
+                padding: 8px;
+            }
+
+            .fl-table td {
+                border-right: 1px solid #f8f8f8;
+                font-size: 12px;
+            }
+
+            .fl-table thead th {
+                color: #ffffff;
+                background: #4FC3A1;
+            }
+
+
+                .fl-table thead th:nth-child(odd) {
+                    color: #ffffff;
+                    background: #324960;
+                }
+
+            .fl-table tr:nth-child(even) {
+                background: #F8F8F8;
+            }
+
+        /* Responsive */
+
+        @media (max-width: 767px) {
+            .fl-table {
+                display: block;
+                width: 100%;
+            }
+
+            .table-wrapper:before {
+                content: "Scroll horizontally >";
+                display: block;
+                text-align: right;
+                font-size: 11px;
+                color: white;
+                padding: 0 0 10px;
+            }
+
+            .fl-table thead, .fl-table tbody, .fl-table thead th {
+                display: block;
+            }
+
+                .fl-table thead th:last-child {
+                    border-bottom: none;
+                }
+
+            .fl-table thead {
+                float: left;
+            }
+
+            .fl-table tbody {
+                width: auto;
+                position: relative;
+                overflow-x: auto;
+            }
+
+            .fl-table td, .fl-table th {
+                padding: 20px .625em .625em .625em;
+                height: 60px;
+                vertical-align: middle;
+                box-sizing: border-box;
+                overflow-x: hidden;
+                overflow-y: auto;
+                width: 120px;
+                font-size: 13px;
+                text-overflow: ellipsis;
+            }
+
+            .fl-table thead th {
+                text-align: left;
+                border-bottom: 1px solid #f7f7f9;
+            }
+
+            .fl-table tbody tr {
+                display: table-cell;
+            }
+
+                .fl-table tbody tr:nth-child(odd) {
+                    background: none;
+                }
+
+            .fl-table tr:nth-child(even) {
+                background: transparent;
+            }
+
+            .fl-table tr td:nth-child(odd) {
+                background: #F8F8F8;
+                border-right: 1px solid #E6E4E4;
+            }
+
+            .fl-table tr td:nth-child(even) {
+                border-right: 1px solid #E6E4E4;
+            }
+
+            .fl-table tbody td {
+                display: block;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h2>考试安排</h2>
+    <div class="table-wrapper">
+        <table class="fl-table">
+            <thead>
+                <tr>
+                    <th>考试科目</th>
+                    <th>考试时间</th>
+                    <th>考场安排</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>物联网</td>
+                    <td>12-15下午56节课</td>
+                    <td></td>
+                    
+                </tr>
+                <tr>
+                    <td>软件需求工程</td>
+                    <td>12-19下午56节</td>
+                    <td><a href="https://shwzr0817-1306567745.cos.ap-nanjing.myqcloud.com/%E5%AD%A6%E5%A7%94%E9%80%9A%E7%9F%A5%E7%B3%BB%E7%BB%9F/%E9%9C%80%E6%B1%82%E5%B7%A5%E7%A8%8B%E5%BA%A7%E4%BD%8D%E8%A1%A8%20(1).xls">座位表</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>大型数据库</td>
+                    <td>12-24下午7点（9 10节）</td>
+                    <td></td>
+
+                </tr>
+                <tr>
+                    <td>软件测试考试</td>
+                    <td>12-26下午7点（9 10节）</td>
+                    <td><a href="file/软件工程1904-1906班软件测试技术名册.xlsx">座位表</a><img src="file/st座位安排.png" height="200px"></td>
+                   
+                </tr>
+                <tr>
+                    <td>创新创业导论</td>
+                    <td>12-30上午8点（1 2节）</td>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td>电子商务</td>
+                    <td>12-30上午10点（3 4节）</td>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td>体系结构</td>
+                    <td>12-30下午7点（9 10节）</td>
+                    <td>世纪楼a504<img src="images/99D20BE398BB201EE659C415A4B5CBA6.png" height="200px"></td>
+                   
+                </tr>
+                <tr>
+                    <td>soa</td>
+                    <td>12-31下午4点（7 8节）</td>
+                    <td>d201<a href="file/SOA原理与技术考场安排表.xls">座位表</a></td>
+                   
+                </tr>
+                <tr>
+                    <td>习概</td>
+                    <td>1-2上午8点（1 2节）</td>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td>毛中特</td>
+                    <td>1-2上午10点（3 4节）</td>
+                    <td></td>
+                   
+                </tr>
+                <tr>
+                    <td>科学计算</td>
+                    <td>1-3下午2点（5 6节）</td>
+                    <td>c101<img src="images/2.png" height="200px"></td>
+                   
+                </tr>
+
+                <tr>
+                    <td>日语</td>
+                    <td>1-4上午10点（3 4节）</td>
+                    <td></td>
+                   
+                </tr>
+
+                <tr>
+                    <td>云计算</td>
+                    <td>1-5上午8点（1 2节）</td>
+                    <td></td>
+                   
+                </tr>
+               
+            <tbody>
+        </table>
+    </div>
+
+
+</body>
+</html>
+<!--下面是无用代码-->
+<a href="http://www.bootstrapmb.com" style="display:none">bootstrapmb</a>

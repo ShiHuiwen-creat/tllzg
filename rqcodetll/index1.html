@@ -1,0 +1,165 @@
+
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>实验报告</title>
+ 
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/lib/style.css" />
+</head>
+
+<body>
+    <div class="container mt-5">
+        <h1>大三上</h1>
+        
+        <button class="btn btn-primary" id="success_tixijiegou2">体系结构实验二（12/18-23:59）</button>
+        <button class="btn btn-primary" id="warning_kexujisuan5678">科学建模实验5678(12/23-23:59)</button>
+        <button class="btn btn-primary" id="shixijiandinbiao">实习鉴定表</button>
+        <button class="btn btn-primary" id="tixijiegou">体系结构实验三(12/30-23:59)</button>
+
+         <button class="btn btn-primary" id="warning_test">测试实验</button>
+         <button class="btn btn-primary" id="warning_yujisuan">云计算实验</button>
+         <button class="btn btn-primary" id="warning_yujisuanzuoye">云计算作业</button>
+
+         <br>
+         <br>
+         <br>
+         <h1>大三下</h1>
+         <button class="btn btn-success" id="duhougan">软件过程与改进读后感</button>
+         <button class="btn btn-success" id="psp">软件过程与改进读后感</button>
+        <!-- <button class="btn btn-error" id="error">error</button>
+        <button class="btn btn-warning" id="warning">Warning</button>
+        <button class="btn btn-info" id="info">Info</button>
+        <button class="btn btn-danger" id="confirm">Confirm</button>
+        <button class="btn btn-primary" id="toast">Toast</button> -->
+    </div>
+    <script src="css/lib/cute-alert.js"></script>
+    <script>
+        var success = document.getElementById("success_tixijiegou2");
+        success.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "warning",
+                title: "体系结构实验二",
+                message: "提交电子版实验报告，格式为“学号-姓名-实验2.doc”，如“20190101010101-张三-实验2.doc”，所有材料均放在一个Word文件中，格式为doc或docx，不需要提交PowerDesigner所保存的oom模型。",
+                buttonText: "以过期",
+                onclick: "https://inbox.weiyun.com/d9myx4SE"                
+            })
+        })
+        var success12 = document.getElementById("tixijiegou");
+        success12.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "体系结构实验三",
+                message: "提交电子版实验报告，格式为“学号-姓名-实验3.doc”，如“20190101010101-张三-实验3.doc”，所有材料均放在一个Word文件中，格式为doc或docx，不需要提交PowerDesigner所保存的oom模型。",
+                buttonText: "提交",
+                onclick: "http://inbox.weiyun.com/wH7tC9Fs"                
+            })
+        })
+
+        var success1 = document.getElementById("warning_kexujisuan5678");
+        success1.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "科学计算实验5678",
+                message: "每个人将四次实验报告放到一个文件夹，提交压缩包，格式为“学号-姓名.zip，如“8209197664-小王.zip”，压缩包里面的文件包含四次报告的源代码和实验报告，文件夹里面的目录组织不限，只要把最后提交的压缩包按要求命名就可以了",
+                buttonText: "交付作业",
+                onclick:"http://inbox.weiyun.com/4ZlYcK72"
+            })
+        })
+        var success2 = document.getElementById("shixijiandinbiao");
+        success2.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "实习鉴定表",
+                message: "班级+学号+姓名+实习鉴定表,例如：软件1905班8209190513史惠文实习鉴定表",
+                buttonText: "交付作业",
+                onclick:"http://inbox.weiyun.com/32yF38MZ"
+            })
+        })
+
+        var warning = document.getElementById("warning_yujisuan");
+        warning.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "云计算实验",
+                message: "点开你就知道了",
+                buttonText: "提交",
+                onclick:"http://csucse99.mikecrm.com/PDyc9Lk"
+            })
+        })
+
+        var info = document.getElementById("warning_test");
+        info.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "软件测试实验",
+                message: "好多次实验报告合成一份，总共7次实验报告，然后1月8号之前交,命名格式：8209190513_史惠文_软件测试实验报告",
+                buttonText: "交付作业",
+                onclick:"http://inbox.weiyun.com/zuPxNMpf"
+            })
+        })
+        
+        var info1 = document.getElementById("warning_yujisuanzuoye");
+        info1.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "云计算作业",
+                message: "点开你就知道了",
+                buttonText: "交付作业",
+                onclick:"http://csucse99.mikecrm.com/fkMEvOD"
+            })
+        })
+        var info2 = document.getElementById("duhougan");
+        info2.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "读后感",
+                message: "详情看本网站《其他重要信息》的2019级《软件过程与改进》课后作业1-《人月神话》读后感.pdf",
+                buttonText: "交付作业",
+                onclick:"http://inbox.weiyun.com/iZe6H8fj"
+            })
+        })
+        var info3 = document.getElementById("psp");
+        info3.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "success",
+                title: "psp练习",
+                message: "详情看本网站《其他重要信息》的刘伟老师作业要求",
+                buttonText: "交付作业",
+                onclick:"http://inbox.weiyun.com/hIUv3005"
+            })
+        })
+
+
+        var confirm = document.getElementById("confirm");
+        confirm.addEventListener("click", ()=>{
+            cuteAlert({
+                type: "question",
+                title: "Confirm Title",
+                message: "Confirm Message",
+                confirmText: "Okay",
+                cancelText: "Cancel"
+            }).then((e)=>{
+                if ( e == ("Thanks")){
+            } else {
+    alert(":-(");
+        }
+        })
+        })
+
+        var toast = document.getElementById("toast");
+        toast.addEventListener("click", ()=>{
+            cuteToast({
+                type: "success",
+                message: "Info Message",
+                timer: 5000
+            })
+        })
+    </script>
+     
+     
+</body>
+</html>
