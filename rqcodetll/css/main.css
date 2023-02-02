@@ -68,7 +68,7 @@ li{
     height: 100px;
     line-height: 100px;
     float: center;
-    background-image: url('../images/kuang.png');
+/*     background-image: url('../images/kuang.png'); */
     background-position: center center;
     background-repeat: no-repeat;
     margin-bottom: 5px;
