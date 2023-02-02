@@ -25,7 +25,7 @@ li{
     margin-top: 110px;
 }
 .header p.p2{
-    height: 40px;
+    height: 38px;
     margin: 0 auto;
     text-align: center;
     line-height: 40px;
@@ -72,7 +72,7 @@ li{
     /* background-image: url('../images/kuang.png'); */
     background-position: center center;
     background-repeat: no-repeat;
-    margin-bottom: 5px;
+    margin-bottom: 0px;
     background-color:transparent;
 }
 .contain ul li:hover{
