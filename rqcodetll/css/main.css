@@ -64,18 +64,18 @@ li{
     height: 100%;
 }
 .contain ul li{
-    width: 200px;
+    width: 300px;
     height: 100px;
     line-height: 100px;
     float: center;
     background-image: url('../images/kuang.png');
     background-position: center center;
     background-repeat: no-repeat;
-    margin-bottom: 70px;
+    margin-bottom: 5px;
     background-color:transparent;
 }
 .contain ul li:hover{
-    background: url('../images/chooseKuang.png') center center no-repeat;
+/*     background: url('../images/chooseKuang.png') center center no-repeat; */
     /*background-color: -webkit-linear-gradient(red, blue); /* Safari 5.1 - 6.0 */
     /*background-color: -o-linear-gradient(red, blue); /* Opera 11.1 - 12.0 */
     /*background-color: -moz-linear-gradient(red, blue); /* Firefox 3.6 - 15 */
